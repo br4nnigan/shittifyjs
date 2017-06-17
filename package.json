@@ -1,0 +1,23 @@
+{
+  "name": "shittifyjs",
+  "version": "0.1.0",
+  "description": "Javascript mangler",
+  "dependencies": {
+    "clipboard": "^1.5.12",
+    "detect-indent": "^4.0.0",
+    "escape-string-regexp": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://br4nnigan.github.io/shittifyjs",
+  "keywords": [
+    "javascript",
+    "uglify",
+    "parser"
+  ],
+  "author": "laz.brannigan@gmail.com",
+  "license": "GPL-3.0",
+  "main": "app.js"
+}

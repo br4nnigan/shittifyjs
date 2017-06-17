@@ -1,0 +1,85 @@
+body{
+	background: lightgray;
+}
+.wrap{
+
+	max-width: 64em;
+	text-align: center;
+	margin: auto;
+
+	> *{
+		text-align: left;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	.ldt{
+
+		background: white;
+		min-height: 10em; 
+
+		&:first-of-type{
+			max-height: 10em;
+		}
+		pre{
+			background: white;
+			margin: 0 0 1em 0;
+		}
+		
+		.string { color: green; }
+		.keyword { font-weight: bold; display: inline-block; margin-bottom: -1px; }
+		.variable { color: cyan; }
+		.define { color: blue; }
+		.number { color: navy; }
+		.comment { color: silver; }
+	}
+}
+
+textarea{
+	
+	display: block;
+	width: 100%;
+	font-family: monospace;
+}
+button{
+	padding: .3em 3em;
+	margin: 1em;
+}
+.tab{
+	position: relative;
+	&:before{
+		content: "";
+		display: inline;
+		position: absolute;
+		top: 0;
+		border-bottom: solid 1px lightgrey;
+		height: .5em;
+		left: 2px;
+		right: 2px;
+	}
+}
+.space{
+	position: relative;
+	&:before{
+		content: "";
+		display: inline;
+		position: absolute;
+		top: .5em;
+		left: .25em;
+		background: lightgrey;
+		height: 2px;
+		width: 1px;
+	}
+}
+.option-group{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 1em;
+
+	input:not([disabled]),
+	input:not([disabled])+label{
+		cursor: pointer;
+	}
+}
